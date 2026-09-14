@@ -283,6 +283,35 @@
             font-size: 0.85rem;
             margin-top: 4rem;
         }
+
+        .footer-links {
+            margin-top: 0.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .legal-text h3 {
+            margin-top: 1.2rem;
+            margin-bottom: 0.4rem;
+            color: var(--accent-color);
+        }
+
+        .legal-text p {
+            margin-bottom: 0.8rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
@@ -425,22 +454,54 @@
 
     </div>
 
-    <!-- MODAL POPUP -->
+    <!-- PROJECT MODAL POPUP -->
     <div id="projectModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <span class="close-btn" onclick="closeModal('projectModal')">&times;</span>
             <h2 id="modalTitle">Project Title</h2>
-            
             <div class="tag-list" id="modalTags"></div>
-
             <div class="modal-gallery" id="modalGallery"></div>
-
             <p id="modalDescription" style="color: var(--text-muted);"></p>
+        </div>
+    </div>
+
+    <!-- IMPRESSUM MODAL -->
+    <div id="impressumModal" class="modal">
+        <div class="modal-content legal-text">
+            <span class="close-btn" onclick="closeModal('impressumModal')">&times;</span>
+            <h2 style="margin-bottom: 1rem;">Legal Notice (Impressum)</h2>
+            <p>Information according to § 5 TMG / Responsible for content:</p>
+            <h3>Operator:</h3>
+            <p>Tymofii Zakharov<br>Bad Godesberg, Bonn, Germany</p>
+            <h3>Contact:</h3>
+            <p>Email: tymofiizakharov@gmail.com</p>
+            <h3>Dispute Resolution:</h3>
+            <p>The European Commission provides a platform for online dispute resolution (OS): https://ec.europa.eu/consumers/odr. I am neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+        </div>
+    </div>
+
+    <!-- PRIVACY POLICY MODAL -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content legal-text">
+            <span class="close-btn" onclick="closeModal('privacyModal')">&times;</span>
+            <h2 style="margin-bottom: 1rem;">Privacy Policy (Datenschutzerklärung)</h2>
+            <h3>1. General Information</h3>
+            <p>This privacy notice informs you about the processing of personal data on this portfolio website operated by Tymofii Zakharov.</p>
+            <h3>2. Hosting & Data Collection</h3>
+            <p>This website is hosted via GitHub Pages (GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). When visiting this website, GitHub may collect server log files, including IP address, browser type, operating system, and timestamp for technical stability and security purposes based on Art. 6 (1) (f) GDPR.</p>
+            <h3>3. Contact Form</h3>
+            <p>If you contact me via email or the contact form, the details you provide (such as name and email address) will be processed for the purpose of handling your inquiry based on Art. 6 (1) (b) GDPR.</p>
+            <h3>4. Your Rights</h3>
+            <p>You have the right to request access to, correction of, or erasure of your stored personal data, as well as the right to object to data processing under GDPR regulations.</p>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2026 Tymofii Zakharov. All rights reserved.</p>
+        <div class="footer-links">
+            <a onclick="openLegalModal('impressumModal')">Legal Notice (Impressum)</a>
+            <a onclick="openLegalModal('privacyModal')">Privacy Policy (Datenschutzerklärung)</a>
+        </div>
     </footer>
 
     <script>
@@ -517,14 +578,17 @@
             document.getElementById('projectModal').style.display = 'block';
         }
 
-        function closeModal() {
-            document.getElementById('projectModal').style.display = 'none';
+        function openLegalModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
         }
 
         window.onclick = function(event) {
-            const modal = document.getElementById('projectModal');
-            if (event.target === modal) {
-                closeModal();
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
             }
         }
     </script>

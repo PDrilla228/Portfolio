@@ -315,7 +315,7 @@
                     <button class="btn" onclick="showPage('about')">More about me</button>
                 </div>
                 <div style="height: 320px;">
-                    <img src="mixer-1.jpg" alt="Featured Work" class="portfolio-img">
+                    <img src="dolbaeb.png" alt="Featured Work" class="portfolio-img">
                 </div>
             </div>
 
@@ -323,7 +323,7 @@
             <div class="feature-grid">
                 <div class="card" onclick="openModal('proj1')">
                     <div class="card-img-wrapper">
-                        <img src="mixer-1.jpg" alt="Vintage Hard-Surface Audio Mixer" class="portfolio-img">
+                        <img src="dolbaeb.png" alt="Vintage Hard-Surface Audio Mixer" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Vintage Hard-Surface Audio Mixer</h3>
@@ -332,7 +332,7 @@
                 </div>
                 <div class="card" onclick="openModal('proj2')">
                     <div class="card-img-wrapper">
-                        <img src="tunnel.jpg" alt="Sci-Fi Futuristic Tunnel" class="portfolio-img">
+                        <img src="Render 1.png" alt="Sci-Fi Futuristic Tunnel" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Sci-Fi Futuristic Tunnel</h3>
@@ -347,7 +347,7 @@
             <h1 style="margin-bottom: 1.5rem;">About me</h1>
             <div class="hero">
                 <div style="height: 380px;">
-                    <img src="character.png" alt="Profile Character" class="portfolio-img" style="object-fit: contain; background: #16191e;">
+                    <img src="Portofolio.jpeg" alt="Profile Character" class="portfolio-img" style="object-fit: contain; background: #16191e;">
                 </div>
                 <div>
                     <p style="margin-bottom: 1rem;">I focus on high-quality 3D asset creation and environment art for games. My primary workflow includes creating clean 3D geometry, baking high-poly detail onto optimized game-ready models, texturing in Substance Painter, and setting up interactive environment scenes in Unreal Engine.</p>
@@ -371,7 +371,7 @@
                 <!-- Project 1 -->
                 <div class="card project-item 3d" onclick="openModal('proj1')">
                     <div class="card-img-wrapper">
-                        <img src="mixer-1.jpg" alt="Vintage Audio Mixer" class="portfolio-img">
+                        <img src="dolbaeb.png" alt="Vintage Audio Mixer" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Vintage Hard-Surface Audio Mixer</h3>
@@ -381,7 +381,7 @@
                 <!-- Project 2 -->
                 <div class="card project-item envs" onclick="openModal('proj2')">
                     <div class="card-img-wrapper">
-                        <img src="tunnel.jpg" alt="Sci-Fi Tunnel" class="portfolio-img">
+                        <img src="Render 1.png" alt="Sci-Fi Tunnel" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Sci-Fi Futuristic Tunnel</h3>
@@ -391,7 +391,7 @@
                 <!-- Project 3 -->
                 <div class="card project-item 3d" onclick="openModal('proj3')">
                     <div class="card-img-wrapper">
-                        <img src="character.png" alt="3D Character" class="portfolio-img" style="object-fit: contain;">
+                        <img src="Portofolio.jpeg" alt="3D Character" class="portfolio-img" style="object-fit: contain;">
                     </div>
                     <div class="card-body">
                         <h3>3D Character Creation & Rigging</h3>
@@ -401,7 +401,7 @@
                 <!-- Project 4 -->
                 <div class="card project-item envs" onclick="openModal('proj4')">
                     <div class="card-img-wrapper">
-                        <img src="plattenbau.jpg" alt="Winter Plattenbau" class="portfolio-img">
+                        <img src="Депрессивная Россия.png" alt="Winter Plattenbau" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Winter Plattenbau Environment</h3>
@@ -417,17 +417,17 @@
             <div class="contact-container">
                 <div>
                     <p style="margin-bottom: 1.5rem;">Feel free to reach out for collaborations, project inquiries, or game design discussions.</p>
-                    <p><strong>Email:</strong> tymofiizakharov@gmail.com</p>
+                    <p><strong>Email:</strong> <a href="mailto:tymofiizakharov@gmail.com" style="color: var(--accent-color); text-decoration: none;">tymofiizakharov@gmail.com</a></p>
                 </div>
-                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                <form class="contact-form" action="https://formspree.io/f/tymofiizakharov@gmail.com" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Name" required>
+                        <input type="text" name="name" placeholder="Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="E-mail" required>
+                        <input type="email" name="_replyto" placeholder="E-mail" required>
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" placeholder="Message" required></textarea>
+                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send message</button>
                 </form>
@@ -460,25 +460,25 @@
                 title: 'Vintage Hard-Surface Audio Mixer',
                 tags: ['Hard-Surface', 'High-to-Low Poly', 'Normal Baking', 'Substance Painter'],
                 description: 'Detailed vintage hard-surface audio mixer prop. High-poly detailing baked clean onto an optimized low-poly game model with custom grunge, wear, and PBR texturing.',
-                images: ['mixer-1.jpg', 'mixer-2.jpg']
+                images: ['dolbaeb.png', 'untitled.png']
             },
             'proj2': {
                 title: 'Sci-Fi Futuristic Tunnel',
                 tags: ['Unreal Engine 5', 'Environment Art', 'Sci-Fi Design', 'Lighting'],
                 description: 'Futuristic tunnel environment scene built for real-time engines. Focuses on repetitive structural geometry, metallic reflections, and emissive neon lighting setup.',
-                images: ['tunnel.jpg']
+                images: ['Render 1.png']
             },
             'proj3': {
                 title: '3D Character Creation & Rigging',
                 tags: ['3D Character', 'Rigging', 'Substance Painter', 'Game Ready'],
                 description: 'Full-body character asset designed for game integration. Features custom clothing, detailed texturing, clean topology, and skeletal rigging ready for animation.',
-                images: ['character.png']
+                images: ['Portofolio.jpeg']
             },
             'proj4': {
                 title: 'Winter Plattenbau Environment',
                 tags: ['Environment Art', 'Mood & Lighting', 'Atmospheric Design'],
                 description: 'Atmospheric winter scene capturing urban residential apartment architecture with cold lighting, snow gradients, and singular warm illuminated window detail.',
-                images: ['plattenbau.jpg']
+                images: ['Депрессивная Россия.png']
             }
         };
 
@@ -522,7 +522,7 @@
 
             const galleryContainer = document.getElementById('modalGallery');
             galleryContainer.innerHTML = data.images.map(imgSrc => 
-                `<img src="${imgSrc}" class="portfolio-img" style="max-height:500px; object-fit:contain; background:#16191e;">`
+                `<img src="${encodeURIComponent(imgSrc)}" class="portfolio-img" style="max-height:500px; object-fit:contain; background:#16191e;">`
             ).join('');
 
             document.getElementById('projectModal').style.display = 'block';

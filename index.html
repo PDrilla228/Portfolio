@@ -27,7 +27,6 @@
             line-height: 1.6;
         }
 
-        /* Navigation */
         nav {
             display: flex;
             justify-content: space-between;
@@ -65,7 +64,6 @@
             color: var(--accent-color);
         }
 
-        /* Container */
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -80,7 +78,6 @@
             display: block;
         }
 
-        /* Hero Section */
         .hero {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -138,7 +135,6 @@
             background-color: var(--card-bg);
         }
 
-        /* Grid & Cards */
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -174,7 +170,6 @@
             font-size: 0.9rem;
         }
 
-        /* Filters */
         .filter-buttons {
             display: flex;
             gap: 1rem;
@@ -196,7 +191,6 @@
             border-color: var(--accent-color);
         }
 
-        /* Contact Section */
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -223,7 +217,6 @@
             border-color: var(--accent-color);
         }
 
-        /* Modal Popup */
         .modal {
             display: none;
             position: fixed;
@@ -315,7 +308,7 @@
                     <button class="btn" onclick="showPage('about')">More about me</button>
                 </div>
                 <div style="height: 320px;">
-                    <img src="dolbaeb.png" alt="Featured Work" class="portfolio-img">
+                    <img src="ass%20photo.png" alt="Featured Work" class="portfolio-img">
                 </div>
             </div>
 
@@ -323,7 +316,7 @@
             <div class="feature-grid">
                 <div class="card" onclick="openModal('proj1')">
                     <div class="card-img-wrapper">
-                        <img src="dolbaeb.png" alt="Vintage Hard-Surface Audio Mixer" class="portfolio-img">
+                        <img src="ass%20photo.png" alt="Vintage Hard-Surface Audio Mixer" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Vintage Hard-Surface Audio Mixer</h3>
@@ -332,7 +325,7 @@
                 </div>
                 <div class="card" onclick="openModal('proj2')">
                     <div class="card-img-wrapper">
-                        <img src="Render 1.png" alt="Sci-Fi Futuristic Tunnel" class="portfolio-img">
+                        <img src="Render%201.png" alt="Sci-Fi Futuristic Tunnel" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Sci-Fi Futuristic Tunnel</h3>
@@ -347,7 +340,7 @@
             <h1 style="margin-bottom: 1.5rem;">About me</h1>
             <div class="hero">
                 <div style="height: 380px;">
-                    <img src="Portofolio.jpeg" alt="Profile Character" class="portfolio-img" style="object-fit: contain; background: #16191e;">
+                    <img src="3d%20Charecter.jpeg" alt="Profile Character" class="portfolio-img" style="object-fit: contain; background: #16191e;">
                 </div>
                 <div>
                     <p style="margin-bottom: 1rem;">I focus on high-quality 3D asset creation and environment art for games. My primary workflow includes creating clean 3D geometry, baking high-poly detail onto optimized game-ready models, texturing in Substance Painter, and setting up interactive environment scenes in Unreal Engine.</p>
@@ -368,40 +361,36 @@
             </div>
 
             <div class="feature-grid">
-                <!-- Project 1 -->
                 <div class="card project-item 3d" onclick="openModal('proj1')">
                     <div class="card-img-wrapper">
-                        <img src="dolbaeb.png" alt="Vintage Audio Mixer" class="portfolio-img">
+                        <img src="ass%20photo.png" alt="Vintage Audio Mixer" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Vintage Hard-Surface Audio Mixer</h3>
                         <p>Click to view details & renders</p>
                     </div>
                 </div>
-                <!-- Project 2 -->
                 <div class="card project-item envs" onclick="openModal('proj2')">
                     <div class="card-img-wrapper">
-                        <img src="Render 1.png" alt="Sci-Fi Tunnel" class="portfolio-img">
+                        <img src="Render%201.png" alt="Sci-Fi Tunnel" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Sci-Fi Futuristic Tunnel</h3>
                         <p>Click to view details & renders</p>
                     </div>
                 </div>
-                <!-- Project 3 -->
                 <div class="card project-item 3d" onclick="openModal('proj3')">
                     <div class="card-img-wrapper">
-                        <img src="Portofolio.jpeg" alt="3D Character" class="portfolio-img" style="object-fit: contain;">
+                        <img src="3d%20Charecter.jpeg" alt="3D Character" class="portfolio-img" style="object-fit: contain;">
                     </div>
                     <div class="card-body">
                         <h3>3D Character Creation & Rigging</h3>
                         <p>Click to view details & renders</p>
                     </div>
                 </div>
-                <!-- Project 4 -->
                 <div class="card project-item envs" onclick="openModal('proj4')">
                     <div class="card-img-wrapper">
-                        <img src="Депрессивная Россия.png" alt="Winter Plattenbau" class="portfolio-img">
+                        <img src="ass%20photo%202.png" alt="Winter Plattenbau" class="portfolio-img">
                     </div>
                     <div class="card-body">
                         <h3>Winter Plattenbau Environment</h3>
@@ -460,7 +449,7 @@
                 title: 'Vintage Hard-Surface Audio Mixer',
                 tags: ['Hard-Surface', 'High-to-Low Poly', 'Normal Baking', 'Substance Painter'],
                 description: 'Detailed vintage hard-surface audio mixer prop. High-poly detailing baked clean onto an optimized low-poly game model with custom grunge, wear, and PBR texturing.',
-                images: ['dolbaeb.png', 'untitled.png']
+                images: ['ass photo.png', 'untitled.png']
             },
             'proj2': {
                 title: 'Sci-Fi Futuristic Tunnel',
@@ -472,13 +461,13 @@
                 title: '3D Character Creation & Rigging',
                 tags: ['3D Character', 'Rigging', 'Substance Painter', 'Game Ready'],
                 description: 'Full-body character asset designed for game integration. Features custom clothing, detailed texturing, clean topology, and skeletal rigging ready for animation.',
-                images: ['Portofolio.jpeg']
+                images: ['3d Charecter.jpeg']
             },
             'proj4': {
                 title: 'Winter Plattenbau Environment',
                 tags: ['Environment Art', 'Mood & Lighting', 'Atmospheric Design'],
                 description: 'Atmospheric winter scene capturing urban residential apartment architecture with cold lighting, snow gradients, and singular warm illuminated window detail.',
-                images: ['Депрессивная Россия.png']
+                images: ['ass photo 2.png']
             }
         };
 
